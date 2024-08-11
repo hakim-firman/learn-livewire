@@ -9,14 +9,14 @@
                 <form wire:submit="save" >
                     <div class="mb-4">
                         <label for="title" class="form-label">Title</label>
-                        <input wire:model="form.title" class="form-control" id="title" rows="3"/>
+                        <input wire:model="form.title" class="form-control" placeholder="let's start" id="title" rows="3"/>
                         @error('form.title')
-                        <small class="text-danger d-block mt-1">{{ $message }}</small>
+                        <small class="text-danger place d-block mt-1">{{ $message }}</small>
                         @enderror
                     </div>
                     <div class="mb-4">
                         <label for="body" class="form-label">Body</label>
-                        <textarea wire:model="form.body" class="form-control" id="body" rows="3"></textarea>
+                        <textarea wire:model="form.body" class="form-control" placeholder="What's on Your mind?" id="body" rows="3"></textarea>
                         @error('form.body')
                         <small class="text-danger d-block mt-1">{{ $message }}</small>
                         @enderror

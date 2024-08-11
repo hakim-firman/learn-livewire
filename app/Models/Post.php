@@ -9,10 +9,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Post extends Model
 {
     use HasFactory;
-    protected $guarded=[];
 
-    public function user():BelongsTo
-     {
+    protected $guarded = [];
+
+    public function user(): BelongsTo
+    {
         $this->belongsTo(User::class);
     }
 }

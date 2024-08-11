@@ -8,7 +8,7 @@ Route::get('/login', \App\Livewire\Login::class)->name('login')->middleware('gue
 Route::middleware('auth')->group(function () {
     Route::get('/', \App\Livewire\Home::class)->name('home');
     Route::get('/about', \App\Livewire\About::class)->name('about');
-    Route::get('/posts', \App\Livewire\Posts\Index::class)->name('posts.index');
+    Route::get('/timeline', \App\Livewire\Timeline::class)->name('timeline');
 
     Route::get('users/{user}', \App\Livewire\Users\Show::class)->name('users.show');
 
